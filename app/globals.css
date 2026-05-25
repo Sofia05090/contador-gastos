@@ -1,0 +1,115 @@
+/* =========================
+   BASE / RESET
+========================= */
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejor render de texto */
+body {
+  background-color: #09090b;
+  color: white;
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   FORMULARIOS / ELEMENTOS
+========================= */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(39, 39, 42, 0.6); 
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  outline: none;
+  transition: 0.2s;
+  color: #ffffff; 
+}
+
+.input::placeholder {
+  color: #a1a1aa; 
+}
+
+.input:focus {
+  border-color: #ffffff;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b; /* zinc-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46; /* zinc-700 */
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b; /* zinc-600 */
+}
+/* =========================
+   TARJETAS BASE
+========================= */
+
+.card {
+  background: rgba(24, 24, 27, 0.6); /* zinc-900 con transparencia */
+  border: 1px solid rgba(63, 63, 70, 0.4); /* zinc-700 suave */
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(113, 113, 122, 0.6);
+  transform: translateY(-2px);
+}
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(39, 39, 42, 0.6); /* zinc-800 */
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #a1a1aa;
+}
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
