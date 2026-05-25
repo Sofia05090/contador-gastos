@@ -1,7 +1,7 @@
 const CACHE_NAME = 'version-1';
 const urlsToCache = [
-'/page.tsx', 
-'/deudas/resumendeudas.tsx', 
+'/', 
+'/deudas/resumendeudas', 
 '/manifest.json' 
 ];
 
