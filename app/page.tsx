@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 
 type Expense = {
   id: number;
@@ -70,10 +71,22 @@ export default function HomePage() {
     <main className="min-h-screen bg-zinc-950 text-white p-6 flex items-center justify-center">
       <div className="w-full max-w-xl space-y-6">
 
-        {/* Título */}
-        <h1 className="text-3xl font-bold text-center">
-          💸 Gastos Compartidos
-        </h1>
+        {/* LOGO + TÍTULO */}
+        <div className="flex flex-col items-center justify-center gap-4">
+
+          <Image
+            src="/logo.png"
+            alt="Gastos Compartidos"
+            width={180}
+            height={180}
+            priority
+          />
+
+          <h1 className="text-3xl font-bold text-center">
+            💸 Gastos Compartidos
+          </h1>
+
+        </div>
 
         {/* PERSONAS */}
         <div className="card">
